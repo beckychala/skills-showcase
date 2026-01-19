@@ -97,9 +97,24 @@ export default function HomePage() {
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               >
                 <SectionLabel className="block mb-8">Portfolio 2024</SectionLabel>
-                <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] mb-8 text-dark-text">
-                  Bereket<br />Chala Daba
-                </h1>
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mb-8">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-dark-text/10 shadow-2xl flex-shrink-0"
+                  >
+                    <Image
+                      src="https://static.wixstatic.com/media/f431ba_bc55ebcc76684845829b998ddb6ca94c~mv2.jpg"
+                      alt="Bereket Chala Daba"
+                      width={192}
+                      className="w-full h-full object-cover"
+                    />
+                  </motion.div>
+                  <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] text-dark-text">
+                    Bereket<br />Chala Daba
+                  </h1>
+                </div>
               </motion.div>
               
               <motion.div
