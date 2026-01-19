@@ -460,7 +460,7 @@ export default function HomePage() {
                   variant="outline"
                   className="border-white/20 text-white hover:bg-white hover:text-dark-text h-12 px-8 rounded-full"
                 >
-                  <a href="https://github.com/bereket-chala" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/Becky-Chala" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-2 h-5 w-5" /> GitHub
                   </a>
                 </Button>
