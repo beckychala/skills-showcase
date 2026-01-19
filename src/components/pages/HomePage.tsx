@@ -279,9 +279,17 @@ export default function HomePage() {
                       >
                         <div className="absolute inset-0 bg-gradient-to-tr from-link-accent/20 to-transparent mix-blend-overlay z-10" />
                         <Image
-                          src={project.projectTitle?.toLowerCase().includes('social shield') || project.projectTitle?.toLowerCase().includes('cybersecurity') 
-                            ? "https://static.wixstatic.com/media/f431ba_8d28f237d14c4999a441f259a73399ac~mv2.png"
-                            : "https://static.wixstatic.com/media/f431ba_f3e4f97687b04e80b44c98e2397b6e2b~mv2.png?originWidth=1152&originHeight=640"}
+                          src={
+                            project.projectTitle?.toLowerCase().includes('10 academy') || project.projectTitle?.toLowerCase().includes('ai & data science')
+                              ? "https://static.wixstatic.com/media/f431ba_6b96aa139c934ae6932afae5d30ed182~mv2.png?originWidth=1152&originHeight=640"
+                              : project.projectTitle?.toLowerCase().includes('coursera') || project.projectTitle?.toLowerCase().includes('data science projects')
+                              ? "https://static.wixstatic.com/media/f431ba_d845faf6e8184af3b3ab80c29be09407~mv2.png?originWidth=1152&originHeight=640"
+                              : project.projectTitle?.toLowerCase().includes('it support') || project.projectTitle?.toLowerCase().includes('systems projects')
+                              ? "https://static.wixstatic.com/media/f431ba_33badcf5d6df4e1084984fcf9d44cb88~mv2.png?originWidth=1152&originHeight=640"
+                              : project.projectTitle?.toLowerCase().includes('social shield') || project.projectTitle?.toLowerCase().includes('cybersecurity')
+                              ? "https://static.wixstatic.com/media/f431ba_8d28f237d14c4999a441f259a73399ac~mv2.png"
+                              : "https://static.wixstatic.com/media/f431ba_f3e4f97687b04e80b44c98e2397b6e2b~mv2.png?originWidth=1152&originHeight=640"
+                          }
                           alt={project.projectTitle || "Project Preview"}
                           width={1200}
                           className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
