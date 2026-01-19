@@ -279,7 +279,9 @@ export default function HomePage() {
                       >
                         <div className="absolute inset-0 bg-gradient-to-tr from-link-accent/20 to-transparent mix-blend-overlay z-10" />
                         <Image
-                          src="https://static.wixstatic.com/media/f431ba_f3e4f97687b04e80b44c98e2397b6e2b~mv2.png?originWidth=1152&originHeight=640"
+                          src={project.projectTitle?.toLowerCase().includes('social shield') || project.projectTitle?.toLowerCase().includes('cybersecurity') 
+                            ? "https://static.wixstatic.com/media/f431ba_8d28f237d14c4999a441f259a73399ac~mv2.png"
+                            : "https://static.wixstatic.com/media/f431ba_f3e4f97687b04e80b44c98e2397b6e2b~mv2.png?originWidth=1152&originHeight=640"}
                           alt={project.projectTitle || "Project Preview"}
                           width={1200}
                           className="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
@@ -316,7 +318,21 @@ export default function HomePage() {
                         )}
 
                         <div className="flex gap-4">
-
+                          {(project.projectTitle?.toLowerCase().includes('social shield') || project.projectTitle?.toLowerCase().includes('cybersecurity')) && (
+                            <Button
+                              asChild
+                              variant="outline"
+                              className="border-white/20 text-white hover:bg-white hover:text-dark-text h-12 px-6 rounded-none transition-all duration-300"
+                            >
+                              <a
+                                href="https://social-shield-29c92.web.app"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <ExternalLink className="mr-2 h-4 w-4" /> View Website
+                              </a>
+                            </Button>
+                          )}
                         </div>
                       </motion.div>
                     </div>
