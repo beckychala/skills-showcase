@@ -79,9 +79,7 @@ export default function HomePage() {
         className="fixed top-0 left-0 right-0 h-1 bg-dark-text origin-left z-50"
         style={{ scaleX }}
       />
-
       <Header />
-
       <main className="w-full">
         
         {/* --- HERO SECTION --- */}
@@ -115,25 +113,14 @@ export default function HomePage() {
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
-                  <Button
-                    asChild
-                    className="bg-dark-text text-white hover:bg-dark-text/90 h-14 px-8 rounded-none text-base tracking-wide transition-all duration-300"
-                  >
-                    <a
-                      href="https://drive.google.com/file/d/YOUR_CV_FILE_ID/view"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Download CV <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
-                  </Button>
+
                   <Button
                     asChild
                     variant="outline"
                     className="border-dark-text text-dark-text hover:bg-dark-text hover:text-white h-14 px-8 rounded-none text-base tracking-wide transition-all duration-300"
                   >
                     <a
-                      href="https://github.com/bereket-chala"
+                      href="https://github.com/Becky-Chala"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -508,7 +495,6 @@ export default function HomePage() {
         </section>
 
       </main>
-
       <Footer />
     </div>
   );
