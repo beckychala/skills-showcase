@@ -301,28 +301,7 @@ export default function HomePage() {
                         )}
 
                         <div className="flex gap-4">
-                          {project.liveDemoUrl && (
-                            <Button
-                              asChild
-                              variant="outline"
-                              className="border-white text-white hover:bg-white hover:text-dark-text rounded-none h-12 px-6"
-                            >
-                              <a href={project.liveDemoUrl} target="_blank" rel="noopener noreferrer">
-                                <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                              </a>
-                            </Button>
-                          )}
-                          {project.repositoryUrl && (
-                            <Button
-                              asChild
-                              variant="ghost"
-                              className="text-white hover:bg-white/10 rounded-none h-12 px-6"
-                            >
-                              <a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer">
-                                <Github className="mr-2 h-4 w-4" /> Repository
-                              </a>
-                            </Button>
-                          )}
+
                         </div>
                       </motion.div>
                     </div>
