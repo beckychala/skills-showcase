@@ -159,12 +159,13 @@ export default function HomePage() {
         <SectionDivider />
 
         {/* --- ABOUT SECTION (Sticky Layout) --- */}
-        <section id="about" className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 py-32">
+        <section id="about" className="w-full bg-dark-text text-white py-32">
+          <div className="max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4 relative">
               <div className="lg:sticky lg:top-32">
-                <SectionLabel className="block mb-4">01 — Profile</SectionLabel>
-                <LargeHeading>About Me</LargeHeading>
+                <SectionLabel className="block mb-4 text-white/60">01 — Profile</SectionLabel>
+                <LargeHeading className="text-white">About Me</LargeHeading>
               </div>
             </div>
             <div className="lg:col-span-8 lg:col-start-5">
@@ -174,10 +175,10 @@ export default function HomePage() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
               >
-                <p className="font-paragraph text-2xl md:text-3xl lg:text-4xl leading-tight text-dark-text mb-12">
+                <p className="font-paragraph text-2xl md:text-3xl lg:text-4xl leading-tight text-white mb-12">
                   I am an Information Systems graduate from Haramaya University with strong hands-on experience in IT support, system troubleshooting, and project-based data, AI, and cybersecurity work.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 font-paragraph text-lg text-medium-gray leading-relaxed">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 font-paragraph text-lg text-white/70 leading-relaxed">
                   <p>
                     I have worked as an IT support and lab assistant, completed an internship at the Ethiopian Statistical Agency, and participated in an intensive AI and data engineering program through 10 Academy in partnership with Kifiya.
                   </p>
@@ -188,9 +189,8 @@ export default function HomePage() {
               </motion.div>
             </div>
           </div>
+          </div>
         </section>
-
-        <SectionDivider />
 
         {/* --- SKILLS SECTION (Masonry / Grid) --- */}
         <section id="skills" className="w-full max-w-[120rem] mx-auto px-6 md:px-12 lg:px-24 py-32 bg-white">
