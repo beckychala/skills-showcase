@@ -6,6 +6,7 @@ import { BaseCrudService } from '@/integrations';
 import { Skills, Projects, Experience, Certifications } from '@/entities';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Chatbot from '@/components/Chatbot';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
 
@@ -514,6 +515,7 @@ export default function HomePage() {
 
       </main>
       <Footer />
+      <Chatbot />
     </div>
   );
 }
